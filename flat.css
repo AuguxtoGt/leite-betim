@@ -84,7 +84,7 @@ body { font-size: 16px; line-height: 1.55; }
 
 /* Hero desktop: ocupa a tela, uma secao por vez */
 @media (min-width: 900px) {
-  .hero-home { min-height: calc(100vh - 64px) !important; display: flex; align-items: center; }
+  .hero-home { min-height: 70vh !important; display: flex; align-items: center; }
 }
 
 /* Mobile e tablet: tudo centralizado, botoes proporcionais */
@@ -153,3 +153,29 @@ html, body { overflow-x: clip; max-width: 100%; }
   .b2b-ctas { margin-top: 24px; }
   .segments-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
 }
+
+/* Hero desktop 70vh */
+@media (min-width: 900px) { .hero-home { min-height: 70vh !important; max-height: 70vh; padding-block: 24px !important; } .hero-mosaic .mosaic-card img { max-height: 300px; } }
+
+/* Centralizacao geral */
+.section-header, .section-header--split { display: flex !important; flex-direction: column !important; align-items: center !important; text-align: center !important; gap: 18px; }
+.section-header-copy { text-align: center; margin-inline: auto; }
+.section-title, .section-subtitle, .page-hero-title, .page-hero-lead { text-align: center; margin-inline: auto; }
+.page-hero, .page-hero .container { text-align: center; }
+.page-hero .breadcrumb, .page-hero nav, .breadcrumbs { justify-content: center; }
+.page-hero-lead { max-width: 56ch; }
+.catalog-controls, .filter-tabs-bar, .filter-tabs { justify-content: center; margin-inline: auto; }
+.catalog-search, .search-box { margin-inline: auto; }
+.products-grid { max-width: 1000px; margin-inline: auto; }
+.section-cta { display: flex; justify-content: center; margin-top: 36px; }
+.breadcrumb, .search-bar-wrap { justify-content: center; margin-inline: auto; }
+.search-input { text-align: left; }
+.collection-body, .collection-body > div { text-align: center; }
+.collection-link { justify-content: center; display: flex; }
+.b2b-section, .b2b-section .container, .b2b-grid > div { text-align: center; }
+.b2b-ctas { justify-content: center; display: flex; }
+.b2b-features { text-align: center; }
+.story-grid > div:first-child, .timeline-step { text-align: center; }
+.timeline-step { display: block !important; }
+.hq-location-grid, .hq-location-grid .section-title, .hq-location-grid .section-subtitle { text-align: left; margin-inline: 0; }
+.recipe-preview-body { text-align: center; }
