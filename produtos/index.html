@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Produtos | Leites, Queijos, Manteigas e Do Pomar | Leite Betim</title>
+  <meta name="description" content="Confira os 16 itens fotografados e toda a linha comercial do Leite Betim: leite integral e desnatado, manteiga 200g e 500g, requeijão, muçarela, bebidas Do Pomar e creme de leite 10kg.">
+
+  <!-- OpenGraph Exclusivo da Pagina Produtos -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Leite Betim">
+  <meta property="og:title" content="Catálogo Completo de Laticínios | Leite Betim">
+  <meta property="og:description" content="Explore leites pasteurizados, manteigas de primeira qualidade, requeijão, muçarela, linha Do Pomar (150g e 900g) e insumos industriais.">
+  <meta property="og:url" content="https://www.leitebetim.com.br/produtos/">
+  <meta property="og:image" content="https://www.leitebetim.com.br/assets/banners/banner-1.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Catálogo de Produtos | Leite Betim">
+  <meta name="twitter:description" content="Linha completa de laticínios inspecionados IMA 3926 para varejo, padarias e indústrias na Grande BH.">
+  <meta name="twitter:image" content="https://www.leitebetim.com.br/assets/banners/banner-1.jpg">
+
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../flat.css">
+</head>
+<body data-base="..">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../" class="brand-logo" aria-label="Página inicial Leite Betim">
+        <img src="../assets/brand/logo.png" alt="Logo Leite Betim" width="118" height="46">
+        <span class="brand-tag">Desde 1992<br>Betim, MG</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="../" class="nav-link">Início</a>
+        <a href="./" class="nav-link is-active">Produtos</a>
+        <a href="../#historia" class="nav-link">Nossa História</a>
+        <a href="../receitas/" class="nav-link">Receitas</a>
+        <a href="../onde-encontrar/" class="nav-link">Onde Encontrar</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="../#comercial" class="btn btn-primary btn-sm">Seja Revendedor</a>
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Gaveta Mobile -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <nav class="mobile-drawer-links" aria-label="Menu mobile">
+      <a href="../">Início</a>
+      <a href="./" class="is-active">Catálogo de Produtos</a>
+      <a href="../#historia">Nossa História e Qualidade</a>
+      <a href="../receitas/">Caderno de Receitas</a>
+      <a href="../onde-encontrar/">Onde Encontrar</a>
+    </nav>
+    <a href="../#comercial" class="btn btn-primary">Seja Revendedor / Cotar</a>
+  </div>
+
+  <main>
+    <!-- Hero da Subpagina -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Trilha de navegação">
+          <a href="../">Início</a>
+          <span>/</span>
+          <span>Produtos</span>
+        </nav>
+        <h1 class="page-hero-title">Catálogo completo de laticínios Leite Betim.</h1>
+        <p class="page-hero-lead">
+          Clique em qualquer item para consultar a apresentação, temperatura de conservação e solicitar cotação direta para o seu comércio ou informação de compra no varejo.
+        </p>
+      </div>
+    </section>
+
+    <!-- Vitrine Completa com Busca e Filtro -->
+    <section class="section-pad bg-mist">
+      <div class="container">
+        <div class="catalog-controls">
+          <div class="search-bar-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="search" id="catalog-search" class="search-input" placeholder="Buscar produto, sabor ou gramatura (ex.: manteiga, 900g, morango)..." aria-label="Buscar produto no catálogo">
+          </div>
+
+          <div class="filter-tabs-bar">
+            <button type="button" class="filter-scroll-btn" data-filter-scroll="prev" aria-label="Ver categorias anteriores">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            <div class="filter-tabs" role="tablist" aria-label="Filtrar catálogo">
+              <button type="button" class="filter-pill is-active" data-catalog-filter="todos">Todos (16)</button>
+              <button type="button" class="filter-pill" data-catalog-filter="leites">Leites Pasteurizados</button>
+              <button type="button" class="filter-pill" data-catalog-filter="manteigas">Manteiga e Requeijão</button>
+              <button type="button" class="filter-pill" data-catalog-filter="queijos">Queijos Mineiros</button>
+              <button type="button" class="filter-pill" data-catalog-filter="bebidas">Bebidas Do Pomar</button>
+              <button type="button" class="filter-pill" data-catalog-filter="industrial">Uso Industrial (10kg)</button>
+            </div>
+            <button type="button" class="filter-scroll-btn" data-filter-scroll="next" aria-label="Ver mais categorias">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="products-grid" id="full-catalog-grid"></div>
+
+        <div class="empty-catalog-msg" id="catalog-empty" hidden>
+          Nenhum item encontrado para essa busca. Limpe o filtro acima ou consulte nossa equipe comercial pelo WhatsApp.
+        </div>
+      </div>
+    </section>
+
+    <!-- Queijaria Mineira e Formatos Especiais de Atacado -->
+    <section class="section-pad">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Mais itens produzidos e comercializados pelo Laticínio Betim.</h2>
+          <p class="section-subtitle">
+            Além das embalagens fotografadas acima, abastecemos supermercados, padarias, casas de carnes e empórios com toda a tradição queijeira mineira.
+          </p>
+        </div>
+
+        <div class="segments-grid">
+          <article class="segment-card">
+            <div class="segment-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+            </div>
+            <h3>Muçarelas Especiais</h3>
+            <p>Muçarela em barra, bolinha, trança, nozinho e palito, nas versões tradicionais ou temperadas para empórios e petiscos.</p>
+          </article>
+
+          <article class="segment-card">
+            <div class="segment-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <h3>Queijos Frescos e Curados</h3>
+            <p>Queijo Minas Padrão, Queijo Frescal, Ricota Fresca leve e Queijo Coalho selecionado para churrasco e casas de carnes.</p>
+          </article>
+
+          <article class="segment-card">
+            <div class="segment-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            </div>
+            <h3>Food Service e Confeitaria</h3>
+            <p>Balde de requeijão cremoso, requeijão em barra para corte e barras de doce de leite puro ou com coco.</p>
+          </article>
+
+          <article class="segment-card">
+            <div class="segment-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+            </div>
+            <h3>Cotação Rápida por CNPJ</h3>
+            <p>Montamos pedidos recorrentes sob medida para o giro da sua loja em Betim e cidades da Grande BH.</p>
+          </article>
+        </div>
+
+        <div style="margin-top: 34px; text-align: center;">
+          <a href="#" data-wa-msg="Olá! Acessei o Catálogo Completo do Leite Betim e gostaria de receber a lista comercial de produtos e preços para revenda." class="btn btn-whatsapp">
+            <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            <span>Solicitar Tabela Comercial no WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal de Ficha do Produto -->
+  <div class="modal-backdrop" id="product-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-product-title">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close" id="modal-close" aria-label="Fechar janela">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="modal-media">
+        <img id="modal-product-img" src="../assets/produtos/leite-integral-1l.jpg" alt="">
+      </div>
+      <div class="modal-info">
+        <div>
+          <span class="eyebrow" id="modal-product-cat">Categoria</span>
+          <h3 class="modal-title" id="modal-product-title">Produto</h3>
+          <p class="modal-desc" id="modal-product-desc"></p>
+          <div class="modal-specs">
+            <div><span>Apresentação</span><strong id="modal-product-weight"></strong></div>
+            <div><span>Conservação</span><strong id="modal-product-storage"></strong></div>
+            <div><span>Indicação</span><strong id="modal-product-audience"></strong></div>
+            <div><span>Inspeção</span><strong>IMA 3926 (MG)</strong></div>
+          </div>
+        </div>
+        <a href="../#comercial" id="modal-product-cta" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width:100%;">
+          <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          <span>Cotar este produto</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodape -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo-box">
+            <img src="../assets/brand/logo.png" alt="Leite Betim" width="110" height="44">
+          </div>
+          <p class="footer-about">
+            Tradição mineira desde 1992 em Betim, MG. Leites pasteurizados, manteigas, requeijão, queijos, bebidas lácteas Do Pomar e linha industrial para toda a Grande BH.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Navegação</h3>
+          <ul class="footer-links">
+            <li><a href="../">Início</a></li>
+            <li><a href="./">Catálogo de Produtos</a></li>
+            <li><a href="../#historia">Nossa História</a></li>
+            <li><a href="../receitas/">Caderno de Receitas</a></li>
+            <li><a href="../onde-encontrar/">Onde Encontrar</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Linhas</h3>
+          <ul class="footer-links">
+            <li><a href="./?categoria=leites">Leites Pasteurizados</a></li>
+            <li><a href="./?categoria=manteigas">Manteigas e Requeijão</a></li>
+            <li><a href="./?categoria=queijos">Queijo Muçarela e Queijos</a></li>
+            <li><a href="./?categoria=bebidas">Bebidas Lácteas Do Pomar</a></li>
+            <li><a href="./?categoria=industrial">Creme de Leite 10kg</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Fábrica e Atendimento</h3>
+          <ul class="footer-links">
+            <li>Rua João de Deus Fiúza de Moura, nº 35</li>
+            <li>Morada do Trevo, Betim/MG, CEP 32600-800</li>
+            <li>Seg. a Sex.: das 08h às 17h30</li>
+            <li><a href="https://www.instagram.com/leite_betim" target="_blank" rel="noopener noreferrer">Instagram @leite_betim</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>Usina de Beneficiamento Laticínios Betim Ltda | CNPJ 02.257.956/0001-07 | Registro IMA 3926</span>
+        <span>Leite Betim &copy; Todos os direitos reservados</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="../#comercial" class="whatsapp-float" data-wa-msg="Olá! Estou vendo o catálogo do Leite Betim e gostaria de informações." aria-label="Falar com Leite Betim no WhatsApp">
+    <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  </a>
+
+  <script src="../script.js"></script>
+</body>
+</html>
+

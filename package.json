@@ -1,0 +1,10 @@
+{
+  "name": "leite-betim",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Site institucional e catalogo comercial do Laticinio Betim (Leite Betim) em Betim e Grande BH",
+  "scripts": {
+    "dev": "python3 -m http.server 3097",
+    "start": "python3 -m http.server 3097"
+  }
+}

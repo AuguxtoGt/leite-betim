@@ -1,0 +1,155 @@
+/* Camada "flat": remove o visual de cards, deixa o site limpo e leve */
+[class*="-card"]:not(.btn),
+.pillar-item, .b2b-pod, .story-photo, .timeline-step {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding-left: 0; padding-right: 0;
+}
+body { font-size: 16px; line-height: 1.55; }
+.section-pad { padding-block: clamp(40px, 7vw, 88px) !important; }
+.section-subtitle { font-size: 1.02rem; max-width: 46ch; }
+.section-title { font-size: clamp(1.7rem, 5.5vw, 2.6rem) !important; line-height: 1.12; }
+
+/* Hero */
+.hero-home { padding-block: 28px 36px !important; min-height: 0 !important; }
+.hero-title { font-size: clamp(2.1rem, 8vw, 3.8rem) !important; line-height: 1.05 !important; }
+.hero-lead { font-size: 1.05rem; max-width: 40ch; }
+.hero-mosaic { display: flex !important; gap: 8px; justify-content: center; align-items: flex-end; }
+.hero-mosaic .mosaic-card { flex: 1; text-align: center; padding: 0 !important; }
+.hero-mosaic .mosaic-card img { width: 100%; height: auto; max-height: 260px; object-fit: contain; }
+.hero-mosaic .mosaic-badge, .hero-mosaic .mosaic-card-meta, .hero-mosaic .mosaic-card--hide-mobile { display: none !important; }
+.hero-mosaic .mosaic-card-title { font-size: .85rem; font-weight: 500; margin-top: 6px; }
+.hero-ctas { display: flex; flex-wrap: wrap; gap: 10px; }
+.hero-ctas .btn { flex: 1 1 160px; justify-content: center; }
+
+/* Credenciais: linha simples */
+.pillars-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px 12px; text-align: center; }
+.pillar-value { font-size: 1.5rem; font-weight: 700; color: var(--brand-blue); }
+.pillar-label { font-size: .85rem; color: var(--ink-secondary); }
+
+/* Produtos: grade de fotos, sem caixa */
+.products-grid { display: grid !important; grid-template-columns: repeat(2, 1fr) !important; gap: 28px 12px !important; }
+.product-card { cursor: pointer; text-align: center; padding: 0 !important; display: block !important; }
+.product-card-top, .product-short, .product-card-action { display: none !important; }
+.product-thumb { background: var(--bg-mist); border-radius: 20px; padding: 14px; margin-bottom: 10px; }
+.product-thumb img { width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; mix-blend-mode: multiply; }
+.product-name { font-size: .95rem; font-weight: 600; line-height: 1.25; }
+.product-card::after { content: attr(aria-label); display: none; }
+
+/* Coleções: imagem + texto, sem caixa */
+.collections-grid { display: grid; gap: 36px; }
+.collection-media img { width: 100%; height: auto; border-radius: 20px; display: block; }
+.collection-body { padding: 14px 0 0 !important; }
+.collection-text { display: none; }
+.collection-title { font-size: 1.25rem; }
+.collection-link { font-weight: 600; color: var(--brand-blue); }
+
+/* B2B: lista enxuta */
+.b2b-features { display: grid; gap: 14px; }
+.b2b-feature-card { padding: 0 0 14px !important; border-bottom: 1px solid var(--border-dark) !important; }
+.b2b-feature-card p { display: none; }
+.b2b-showcase { display: none; }
+.b2b-grid { display: block !important; }
+.b2b-ctas { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+
+/* História: sem fotos extras, só linha do tempo */
+.story-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 24px; }
+.story-photo:nth-child(n+3), .story-photo figcaption { display: none; }
+.story-photo img { width: 100%; height: auto; border-radius: 16px; }
+.timeline-step p { font-size: .95rem; }
+
+/* Receitas */
+.recipes-preview-grid { display: grid; gap: 28px; }
+.recipe-preview-img img { width: 100%; height: auto; border-radius: 20px; }
+.recipe-preview-desc, .recipe-meta-pills { display: none; }
+.recipe-preview-card:nth-child(n+3) { display: none; }
+
+@media (min-width: 760px) {
+  .products-grid { grid-template-columns: repeat(4, 1fr) !important; }
+  .pillars-grid { grid-template-columns: repeat(4, 1fr); }
+  .collections-grid, .recipes-preview-grid { grid-template-columns: 1fr 1fr; }
+  .b2b-features { grid-template-columns: 1fr 1fr; gap: 14px 40px; }
+}
+
+
+/* Contato limpo */
+.contact-clean { text-align: center; }
+.contact-clean .section-subtitle { margin: 12px auto 0; }
+.contact-clean-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin: 28px 0 22px; }
+.contact-clean-actions .btn svg, .whatsapp-float svg { width: 22px; height: 22px; flex: none; }
+.whatsapp-float svg { width: 30px; height: 30px; }
+.contact-clean-info { color: var(--ink-secondary); font-size: .95rem; line-height: 1.7; }
+
+/* Hero desktop: ocupa a tela, uma secao por vez */
+@media (min-width: 900px) {
+  .hero-home { min-height: calc(100vh - 64px) !important; display: flex; align-items: center; }
+}
+
+/* Mobile e tablet: tudo centralizado, botoes proporcionais */
+@media (max-width: 899px) {
+  .hero-grid { display: flex !important; flex-direction: column; gap: 28px !important; text-align: center; }
+  .hero-copy { max-width: 560px; margin: 0 auto; text-align: center; }
+  .hero-title { font-size: clamp(2rem, 9vw, 2.8rem) !important; text-align: center; line-height: 1.08 !important; letter-spacing: -0.03em; }
+  .hero-title span { color: var(--brand-blue); display: block; }
+  .hero-lead { margin: 14px auto 0 !important; text-align: center; }
+  .hero-ctas { flex-direction: column; align-items: center; gap: 10px; margin-top: 22px; }
+  .hero-ctas .btn { flex: none; width: auto; min-width: 210px; padding: 11px 24px; font-size: .93rem; }
+  .section-header, .section-header--split { text-align: center; flex-direction: column; align-items: center; }
+  .section-title, .section-subtitle, .eyebrow { text-align: center; margin-inline: auto; }
+  .eyebrow { display: block; }
+  .section-header .btn, .b2b-ctas .btn { width: auto; min-width: 210px; padding: 11px 24px; font-size: .93rem; }
+  .b2b-grid, .b2b-grid > div { text-align: center; }
+  .b2b-ctas { flex-direction: column; align-items: center; }
+  .collection-body, .recipe-preview-body, .timeline-steps { text-align: center; }
+  .timeline-step { display: block !important; }
+  .timeline-year { display: block; margin-bottom: 4px; }
+  .filter-tabs-bar { justify-content: center; }
+}
+.page-hero, .page-hero * { text-align: center; }
+@media (max-width: 899px) { .page-hero .btn, .btn { max-width: 100%; } }
+
+html, body { overflow-x: clip; max-width: 100%; }
+.hero-grid > *, .hero-copy, .hero-mosaic, .hero-mosaic .mosaic-card { min-width: 0; max-width: 100%; }
+@media (max-width: 899px) {
+  .hero-grid > * { width: 100%; }
+  .hero-mosaic { width: 100%; }
+  .hero-mosaic .mosaic-card img { max-height: 200px; }
+  .filter-tabs-bar { max-width: 100%; }
+  .container { padding-inline: 20px; }
+}
+@media (max-width: 899px) { .collection-link, .recipe-preview-link { justify-content: center; display: flex; } .eyebrow { width: fit-content; } }
+
+/* Sem balões de rótulo acima das seções */
+.eyebrow:not(#modal-product-cat) { display: none !important; }
+
+/* Ícone WhatsApp */
+.wa-icon { fill: currentColor !important; stroke: none !important; flex: none; }
+.btn .wa-icon { width: 20px !important; height: 20px !important; }
+.whatsapp-float .wa-icon { width: 28px !important; height: 28px !important; }
+
+/* Linha do tempo sem cards azuis */
+.timeline-year { background: none !important; padding: 0 !important; color: var(--brand-blue) !important; font-size: 1.5rem !important; font-weight: 700; }
+.timeline-steps { gap: 22px; }
+
+/* Onde encontrar */
+.segments-grid { text-align: center; }
+.segment-card { padding: 0 !important; display: flex; flex-direction: column; align-items: center; }
+.segment-icon { margin: 0 auto 12px !important; }
+.segment-card p { max-width: 34ch; margin-inline: auto; }
+.section-header, .section-header-copy { text-align: center; margin-inline: auto; }
+.rotas-box { margin-top: 56px; text-align: center; }
+.rotas-box h3 { font-size: 1.45rem; font-weight: 700; }
+.rotas-box p { margin: 8px auto 0; max-width: 560px; color: var(--ink-secondary); }
+.cities-cloud { justify-content: center; }
+.rotas-cta { margin-top: 26px; display: flex; justify-content: center; }
+.rotas-cta .btn { width: auto; }
+
+/* Atacado mais limpo no mobile */
+@media (max-width: 899px) {
+  .b2b-features { display: none !important; }
+  .b2b-section .section-subtitle { margin-bottom: 0; }
+  .b2b-ctas { margin-top: 24px; }
+  .segments-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+}
